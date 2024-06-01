@@ -2,26 +2,28 @@
 // constructors to initialize coordinates and a destructor to clean up.
 #include<iostream>
 using namespace std;
-class rectangle{
+class point{
+    int x,y;
     public:
+    point(){
+        x=0;
+        y=0;
+    }
+    ~point(){}
 
-    virtual void area(){}
-    virtual ~rectangle(){}
-};
-class clacarea:public rectangle{
-    int length;
-    int breadth;
-    public:
-    clacarea(int l,int b):length(l),breadth(b){}
-void  area()override{
-    cout<<"the area of rectangle is : "<<length*breadth<<endl;
-}
-};
+    point(int x,int y):x(x),y(y){}
+    void display(){
+        cout<<"value of "<<"x "<<x<<" and"<<"y "<<y<<endl;
+    }
+
+}; 
+
 int main(){
-    rectangle *r=new clacarea(2,3);
-    r->area();
+    point p;
+    p.display();
 
-    delete r;
+    point p1(3,4);
+    p1.display();
     return 0;
-
 }
+
