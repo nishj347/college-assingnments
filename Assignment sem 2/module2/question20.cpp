@@ -24,9 +24,6 @@ public:
         return seconds;
     }
 
-    // void display() const {
-    //     cout << "Time: " << hour << ":" << minute << ":" << seconds << endl;
-    // }
 };
 
 int main() {
@@ -34,8 +31,6 @@ int main() {
 
     cout << "The time is: " << c.getHour() << ":" << c.getMinute() << ":" << c.getSecond() << endl;
 
-    // // Display the complete time
-    // c.display();
 
     return 0;
 }
