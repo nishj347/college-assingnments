@@ -15,7 +15,4 @@ int main(){
     employee *e=new employee("tasneem");
     e->show();
     return 0;
-
-
-
 }
