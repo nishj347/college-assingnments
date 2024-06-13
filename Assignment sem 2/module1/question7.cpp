@@ -12,7 +12,7 @@ class derived:public base{
 public:
 void show(){
     cout<<"this is the show function of derived class"<<endl;
-}
+    }
 };
 int main(){
     base *b=new derived;
