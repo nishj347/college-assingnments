@@ -71,8 +71,7 @@ int main() {
     e1->calculatesalary();
     e1->display();
 
-    delete e;
-    delete e1;
+    delete e;delete e1;
 
     return 0;
 }
