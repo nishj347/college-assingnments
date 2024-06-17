@@ -8,7 +8,7 @@ int main() {
     float pi = 3.14f;
 
 
-    ofstream outFile("demo.txt");
+    ofstream outFile("demo.bin", ios::binary);
 
     // Check if the file was successfully opened
     if (!outFile) {
