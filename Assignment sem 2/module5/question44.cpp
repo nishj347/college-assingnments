@@ -8,20 +8,20 @@ int main() {
     float pi = 3.14f;
 
 
-    ofstream outFile("demo.bin", ios::binary);
+    ofstream out("demo.bin", ios::binary);
 
     // Check if the file was successfully opened
-    if (!outFile) {
+    if (!out) {
         cerr << "Failed to open the file for writing." << endl;
         return 1;
     }
 
     // Use an intermediate buffer to write data
-    outFile.write((char*)&num, sizeof(num));
-    outFile.write((char*)&pi, sizeof(pi));
+    out.write((char*)&num, sizeof(num));
+    out.write((char*)&pi, sizeof(pi));
 
     // Close the file
-    outFile.close();
+    out.close();
 
     cout << "Data written successfully." << endl;
     return 0;
