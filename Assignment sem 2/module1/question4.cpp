@@ -22,10 +22,11 @@ class employee{
 };
 
 int main(){
+   
     employee e;
-    e.setname("dhara");
-    e.setid(7777);
-    cout<<"name of the employee:"<<e.getname()<<endl;
-    cout<<"employee id is:"<<e.getid()<<endl;
+     e.setname("dhara");
+     e.setid(7777);
+     cout<<"name of the employee:"<<e.getname()<<endl;
+     cout<<"employee id is:"<<e.getid()<<endl;
     return 0;
 }

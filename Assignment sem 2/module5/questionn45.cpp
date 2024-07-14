@@ -19,7 +19,7 @@ int main(){
         cout<<result;
     }
     catch(runtime_error &e){
-        cout<<"error:"<<e.what()<<endl;
+        cerr<<"error:"<<e.what()<<endl;
     }
     return 0;
 }
